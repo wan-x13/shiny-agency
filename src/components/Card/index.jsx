@@ -18,8 +18,9 @@ const CardImage = styled.img`
 const CardWrapper = styled.div`
       display :flex;
       flex-direction: column;
+      align-items: center;
       padding :15px;
-      backgroud-color: ${colors.backgroundLight};
+      background-color: ${colors.backgroundLight};
       border-radius: 30px;
       width: 350px;
       transition: 200ms;
