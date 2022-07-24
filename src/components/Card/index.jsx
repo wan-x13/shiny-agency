@@ -19,10 +19,13 @@ const CardWrapper = styled.div`
       display :flex;
       flex-direction: column;
       align-items: center;
-      padding :15px;
+      justify-content : center;
+      gap: 30px;
+     
       background-color: ${colors.backgroundLight};
       border-radius: 30px;
       width: 350px;
+      height: 350px;
       transition: 200ms;
       &:hover{
          cursor: pointer;

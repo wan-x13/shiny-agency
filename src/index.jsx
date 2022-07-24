@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Error from './components/Error';
 import Header from './components/Header';
 import Freelances from './pages/Freelances';
+import Profils from './pages/Profils/Profils';
 
 
 import Home from './pages/Home';
@@ -33,6 +34,7 @@ root.render(
     <Route path='*'element={<Error/>}/>
     <Route path='/freelances' element={<Freelances/>} />
     <Route path='/results'element={<Results/>}/>
+    <Route path='/profils' element={<Profils/>}/>
    </Routes>
    </BrowserRouter>
 
