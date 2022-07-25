@@ -10,20 +10,17 @@ import Profils from './pages/Profils/Profils';
 import Home from './pages/Home';
 import Results from './pages/Results';
 import Survey from './pages/Survey';
-import {createGlobalStyle} from 'styled-components';
+import { ThemeProvider } from './utils/context';
+import Footer from './components/Footer/Footer';
+import GlobalStyle from './utils/style/GlobalStyle';
 
-const GlobalStyle = createGlobalStyle`
-   
-    div{
-      font-family: 'Trebuchet MS', Helvetica, sans-serif;
-    }
-      
-      `
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
    <BrowserRouter>
+   <ThemeProvider>
    <GlobalStyle/>
    <Header/>
 
@@ -36,6 +33,8 @@ root.render(
     <Route path='/results'element={<Results/>}/>
     <Route path='/profils' element={<Profils/>}/>
    </Routes>
+   <Footer/>
+   </ThemeProvider>
    </BrowserRouter>
 
 
